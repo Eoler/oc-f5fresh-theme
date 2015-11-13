@@ -1,0 +1,18 @@
+{
+  "name": "oc-f5fresh-theme",
+  "version": "0.9.1",
+  "authors": [
+    "Danilo Cuculic <eoler@castus.me>"
+  ],
+  "description": "Starter template for building Zurb Foundation 5 themed October CMS sites.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation": "5.5.3"
+  }
+}

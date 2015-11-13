@@ -1,0 +1,13 @@
+# ignore files beginning with .
+\.*
+
+# ignore development files
+*.css.map
+
+# ignore build/vendor folders
+node_modules
+vendor
+
+# except do not ignore
+!.gitignore
+!.bowerrc
