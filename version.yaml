@@ -1,3 +1,6 @@
 0.9.1: 
     - Initial F5fresh theme with Gulp-built frontend resources.
     - based on Zurb Foundation 5.5.3
+0.9.2:
+    - Added composite layout with partials, kitchen-sink intro page for testing style changes
+    - Added custom script and style override placeholders

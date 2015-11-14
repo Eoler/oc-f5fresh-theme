@@ -1,0 +1,36 @@
+<!doctype html>
+<!--[if lt IE 9]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=1">
+    <title>{{ this.page.title }} | {{ this.theme.getConfigValue('name') }}</title>
+
+    <!-- Theming / tile colors -->
+    <meta name="theme-color" content="#2AA6CB">
+    <meta name="msapplication-TileColor" content="#2AA6CB">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="128x128" href="{{ 'assets/images/favicon.png'|theme }}">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="{{ this.theme.getConfigValue('name') }}">
+    <link rel="apple-touch-icon-precomposed" href="{{ 'assets/images/ios-desktop.png'|theme }}">
+
+    <link rel="shortcut icon" href="{{ 'assets/images/favicon.png'|theme }}">
+    <link rel="canonical" href="{{ '/'|app }}">
+
+    <link rel="stylesheet" href="{{ ['assets/css/foundation5.css']|theme }}">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+    <script src="{{ ['assets/js/detect.js']|theme }}"></script>
+    <link rel="stylesheet" href="{{ 'assets/css/app.css'|theme }}">
+    {% styles %}
+</head>
+<body class="antialiased">
+
+    <main role="main" class="scroll-container">
+    <div class="row">

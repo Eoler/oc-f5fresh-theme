@@ -79,7 +79,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-$row-width: rem-calc(1180); // 1000
+$row-width: rem-calc(1000);
 // $total-columns: 12;
 // $column-gutter: rem-calc(30);
 
@@ -87,13 +87,13 @@ $row-width: rem-calc(1180); // 1000
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-// $font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 // $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
-// $font-weight-normal: normal;
-// $font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-bold: bold;
 
 // $white       : #FFFFFF;
 // $ghost       : #FAFAFA;
@@ -112,36 +112,36 @@ $white-smoke : #F5F5F5;
 // $charcoal    : #555555;
 // $tuatara     : #444444;
 // $oil         : #333333;
-// $jet         : #222222;
+$jet         : #222222;
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
+$primary-color: #008CBA;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #43AC6A;
+$warning-color: #f08a24;
+$info-color: #a0d3e8;
 
 // We use these to control various global styles
-// $body-bg: $white;
-// $body-font-color: $jet;
-// $body-font-family: $font-family-sans-serif;
-// $body-font-weight: $font-weight-normal;
-// $body-font-style: normal;
+$body-bg: $white-smoke; // $white;
+$body-font-color: $jet;
+$body-font-family: $font-family-sans-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
 
 // We use this to control font-smoothing
-// $font-smoothing: antialiased;
+$font-smoothing: antialiased;
 
 // We use these to control text direction settings
-// $text-direction: ltr;
-// $opposite-direction: right;
-// $default-float: left;
-// $last-child-float: $opposite-direction;
+$text-direction: ltr;
+$opposite-direction: right;
+$default-float: left;
+$last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
-// $global-rounded: 1000px;
+$global-radius: 3px;
+$global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -197,12 +197,12 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 // $large: $large-up;
 
 // We use this as cursors values for enabling the option of having custom cursors in the whole site's stylesheet
-// $cursor-crosshair-value: crosshair;
-// $cursor-default-value: default;
-// $cursor-disabled-value: not-allowed;
-// $cursor-pointer-value: pointer;
-// $cursor-help-value: help;
-// $cursor-text-value: text;
+$cursor-crosshair-value: crosshair;
+$cursor-default-value: default;
+$cursor-disabled-value: not-allowed;
+$cursor-pointer-value: pointer;
+$cursor-help-value: help;
+$cursor-text-value: text;
 
 // e. Typography
 // - - - - - - - - - - - - - - - - - - - - - - - - -
