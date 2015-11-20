@@ -20,11 +20,11 @@ var
   defvendor_srcdir = "assets/vendor/",
   defstylcss_srcdir = "assets/scss/",
   defstylcss_src = [
-    defstylcss_srcdir+"foundation5.scss",
+    defstylcss_srcdir+"foundation553.scss",
     defstylcss_srcdir+"app.scss"
   ],
   defpostyles_src = [
-    defstyles_dest+"foundation5.css",
+    defstyles_dest+"foundation553.css",
     defstyles_dest+"app.css"
   ],
   defscripts_dest = defassets_dest+"js/",
@@ -60,9 +60,9 @@ gulp.task('scripts', function(){
    destdir = args.dest || defscripts_dest;
   return gulp.src( srcfiles )
   .pipe( include() )
-  .pipe( rename( function(fullname){ fullname.extname = ".js"; }) )
+  .pipe( rename( function(fullname){ fullname.extname = ".js"; } ) )
   .pipe( gulp.dest( destdir ) )
-  .pipe( rename( function(fullname){ fullname.extname = ".min.js"; }) )
+  .pipe( rename( function(fullname){ fullname.extname = ".min.js"; } ) )
   .pipe( uglify( { preserveComments: "some" } ) )
   .pipe( gulp.dest( destdir ) )
 });
@@ -86,15 +86,13 @@ gulp.task('stylcss', function(){
     includePaths: [
       defvendor_srcdir+"foundation/scss",
       defvendor_srcdir+"jQuery.mmenu/src"
-    ]} ) )
-  .on('error', function(err){ } )
-  .pipe( sourcemaps.write( {includeContent: false, sourceRoot: './'} ) )
-  .pipe( sourcemaps.init( {loadMaps: true} ) )
+    ] } ) )
+  .on('error', function(err){} )
   .pipe( autoprefixer( { cascade: false, //map: true,
     browsers: ["last 3 versions", "iOS >= 6"] } ) )
   .pipe( sourcemaps.write( "./", {
     includeContent: false,
-    sourceRoot: defstylcss_srcdir} ) )
+    sourceRoot: defstylcss_srcdir } ) )
   .pipe( gulp.dest( destdir ) )
 });
 
@@ -105,7 +103,7 @@ gulp.task('postyles', /*['stylcss'],*/ function(){
    destdir = args.dest || defstyles_dest;
   return gulp.src( srcfiles )
   .pipe( minifycss( /*{ compatibility: "ie8" }*/ ) )
-  .pipe( rename( {suffix: ".min"} ) )
+  .pipe( rename( { suffix: ".min" } ) )
   .pipe( gulp.dest( destdir ) )
 });
 

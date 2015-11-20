@@ -8,7 +8,7 @@ body {
 }
 
 h2 {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 a.active {
@@ -23,7 +23,7 @@ pre {
         margin: rem-calc(10 0);
         padding: rem-calc(5);
         overflow-x: auto;
-        line-height: 1.3rem;
+        line-height: 1.25rem;
         font-weight: normal;
     }
 }
@@ -33,7 +33,7 @@ pre {
 @media #{$small-only} {
 
     ul.inline-list li {
-        padding: rem-calc(8);
+        padding: rem-calc(5);
     }
 
 }
