@@ -10,10 +10,6 @@
  * > gulp styles [--src=<filename.scss> [--dest=<path/dirname>]]
  */
 var
-  // global modules
-  args = require('yargs').argv,
-  gulp = require('gulp'),
-  rename = require('gulp-rename'),
   // defaults
   defassets_dest = "assets/",
   defstyles_dest = defassets_dest+"css/",
@@ -21,14 +17,18 @@ var
   defstylcss_srcdir = "assets/scss/",
   defstylcss_src = [
     defstylcss_srcdir+"foundation553.scss",
-    defstylcss_srcdir+"app.scss"
+    defstylcss_srcdir+"app553.scss"
   ],
   defpostyles_src = [
     defstyles_dest+"foundation553.css",
-    defstyles_dest+"app.css"
+    defstyles_dest+"app553.css"
   ],
   defscripts_dest = defassets_dest+"js/",
   defscripts_srcglb = "assets/es6/*.js";
+  // global modules
+  args = require('yargs').argv,
+  gulp = require('gulp'),
+  rename = require('gulp-rename');
 
 var reportError = function(error){
  var

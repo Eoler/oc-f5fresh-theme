@@ -1,7 +1,7 @@
 // Configuration and mixins
 @import "settings553";
 //@import "foundation/components/global";
-@import "settings-app";
+@import "appsettings553";
 
 body {
     padding-top: rem-calc(25);
@@ -27,6 +27,7 @@ pre {
         font-weight: normal;
     }
 }
+
 
 /* Responsive breakpoints */
 
