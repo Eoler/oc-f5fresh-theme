@@ -7,7 +7,7 @@
  *
  * Usage (GulpJS):
  * > gulp scripts [--src=<filename.es6> [--dest=<path/dirname>]]
- * > gulp stylcss [--src=<filename.scss> [--dest=<path/dirname>]]
+ * > gulp styles [--src=<filename.scss> [--dest=<path/dirname>]]
  */
 var
   // global modules
@@ -67,7 +67,7 @@ gulp.task('scripts', function(){
   .pipe( gulp.dest( destdir ) )
 });
 
-gulp.task('stylcss', function(){
+gulp.task('styles', function(){
  var
    sourcemaps = require('gulp-sourcemaps'),
    sass = require('gulp-sass'),
@@ -96,7 +96,7 @@ gulp.task('stylcss', function(){
   .pipe( gulp.dest( destdir ) )
 });
 
-gulp.task('postyles', /*['stylcss'],*/ function(){
+gulp.task('postyles', /*['styles'],*/ function(){
  var
    minifycss = require('gulp-minify-css'),
    srcfiles = args.src || defpostyles_src,
