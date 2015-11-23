@@ -9,6 +9,7 @@
  * > gulp scripts [--src=<filename.es6> [--dest=<path/dirname>]]
  * > gulp styles [--src=<filename.scss> [--dest=<path/dirname>]]
  */
+'use strict';
 var
   // defaults
   defassets_dest = "assets/",
@@ -17,14 +18,14 @@ var
   defstylcss_srcdir = "assets/scss/",
   defstylcss_src = [
     defstylcss_srcdir+"foundation553.scss",
-    defstylcss_srcdir+"app553.scss"
+    defstylcss_srcdir+"styleguide.scss"
   ],
   defpostyles_src = [
     defstyles_dest+"foundation553.css",
-    defstyles_dest+"app553.css"
+    defstyles_dest+"styleguide.css"
   ],
   defscripts_dest = defassets_dest+"js/",
-  defscripts_srcglb = "assets/es6/*.js";
+  defscripts_srcglb = "assets/es6/*.js",
   // global modules
   args = require('yargs').argv,
   gulp = require('gulp'),
@@ -52,7 +53,7 @@ var reportError = function(error){
   this.emit('end');
 };
 
-gulp.task('scripts', function(){
+gulp.task('scripts', ()=>{
  var
    include = require('gulp-include'), // extend Javascript files with Sprockets syntax
    uglify = require('gulp-uglify'),
@@ -67,7 +68,7 @@ gulp.task('scripts', function(){
   .pipe( gulp.dest( destdir ) )
 });
 
-gulp.task('styles', function(){
+gulp.task('styles', ()=>{
  var
    sourcemaps = require('gulp-sourcemaps'),
    sass = require('gulp-sass'),
@@ -96,7 +97,7 @@ gulp.task('styles', function(){
   .pipe( gulp.dest( destdir ) )
 });
 
-gulp.task('postyles', /*['styles'],*/ function(){
+gulp.task('postyles', /*['styles'],*/ ()=>{
  var
    minifycss = require('gulp-minify-css'),
    srcfiles = args.src || defpostyles_src,
@@ -109,7 +110,7 @@ gulp.task('postyles', /*['styles'],*/ function(){
 
 gulp.task('default', ['scripts', 'postyles']);
 
-gulp.task('watch', function(){
+gulp.task('watch', ()=>{
   gulp.watch( defscripts_srcglb, ['scripts'] );
   gulp.watch( defstyles_dest, ['postyles'] );
 });
