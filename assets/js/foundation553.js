@@ -730,7 +730,8 @@
   };
 
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.abide = {
@@ -1156,7 +1157,8 @@
     }
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.accordion = {
@@ -1281,7 +1283,8 @@
     reflow : function () {}
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.alert = {
@@ -1324,7 +1327,8 @@
     reflow : function () {}
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.clearing = {
@@ -1910,7 +1914,8 @@
   };
 
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.dropdown = {
@@ -2378,7 +2383,8 @@
     reflow : function () {}
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.equalizer = {
@@ -2482,7 +2488,8 @@
     }
   };
 })(jQuery, window, window.document);
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.interchange = {
@@ -2842,7 +2849,8 @@
   };
 
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   var Modernizr = Modernizr || false;
@@ -3777,7 +3785,8 @@
     reflow : function () {}
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs['magellan-expedition'] = {
@@ -3991,7 +4000,8 @@
     }
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.offcanvas = {
@@ -4216,7 +4226,8 @@
     reflow : function () {}
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   var noop = function () {};
@@ -4692,7 +4703,8 @@
   };
 
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   var openModals = [];
@@ -5214,7 +5226,8 @@
     };
   }
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.slider = {
@@ -5510,7 +5523,8 @@
   };
 
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.tab = {
@@ -5757,7 +5771,8 @@
     reflow : function () {}
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.tooltip = {
@@ -6105,7 +6120,8 @@
     reflow : function () {}
   };
 }(jQuery, window, window.document));
-;(function ($, window, document, undefined) {
+
+;(function ($, window, document, undefined) {
   'use strict';
 
   Foundation.libs.topbar = {

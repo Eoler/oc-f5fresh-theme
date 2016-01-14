@@ -1,13 +1,7 @@
-# ignore files beginning with .
-\.*
-
-# ignore development files
+# develop/debug
+.idea
 *.css.map
 
-# ignore build/vendor folders
-node_modules
-vendor
-
-# except do not ignore
-!.gitignore
-!.bowerrc
+# 3rd party/vendor
+vendor/
+node_modules/
