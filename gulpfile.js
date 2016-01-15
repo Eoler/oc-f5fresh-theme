@@ -21,6 +21,7 @@ var // defaults
     // global modules
     args = require('yargs').argv,
     gulp = require('gulp'),
+    gulpif = require('gulp-if'),
     rename = require('gulp-rename');
 
 gulp.task('styles', ()=>{
@@ -38,20 +39,19 @@ var sourcemaps = require('gulp-sourcemaps'),
         //sourceComments: true,
         sourceMapEmbed: false,
         includePaths: [
-          defvendor_srcdir+"foundation/scss",
-          defvendor_srcdir+"jQuery.mmenu/src"
+          defvendor_srcdir+"foundation/scss"
         ] } ) )
     .pipe( autoprefixer( {
         cascade: false,
         //map: true,
-        browsers: ["last 3 versions", "iOS >= 6"] } ) )
+        browsers: ["last 2 versions", "iOS >= 7"] } ) )
     .pipe( sourcemaps.write( "./", {
         includeContent: false,
         sourceRoot: defstyles_srcdir } ) )
     .pipe( gulp.dest( destdir ) )
-    .pipe( rename( { suffix: ".min" } ) )
-    .pipe( minifycss( /*{ compatibility: "ie8" }*/ ) )
-    .pipe( gulp.dest( destdir ) )
+    .pipe( gulpif(args.production, rename( { suffix: ".min" } ) ) )
+    .pipe( gulpif(args.production, minifycss() ) )
+    .pipe( gulpif(args.production, gulp.dest( destdir ) ) )
 });
 
 gulp.task('scripts', ()=>{
@@ -62,9 +62,9 @@ var include = require('gulp-include'), // extend Javascript files with Sprockets
     return gulp.src( srcfiles )
     .pipe( include() )
     .pipe( gulp.dest( destdir ) )
-    .pipe( rename( function(fullname){ fullname.extname = ".min.js"; } ) )
-    .pipe( uglify( { preserveComments: "license" } ) )
-    .pipe( gulp.dest( destdir ) )
+    .pipe( gulpif(args.production, rename( function(fullname){ fullname.extname = ".min.js"; } ) ) )
+    .pipe( gulpif(args.production, uglify( { preserveComments: "license" } ) ) )
+    .pipe( gulpif(args.production, gulp.dest( destdir ) ) )
 });
 
 gulp.task('default', ['styles', 'scripts']);
