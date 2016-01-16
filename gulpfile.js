@@ -24,6 +24,8 @@ var // defaults
     gulpif = require('gulp-if'),
     rename = require('gulp-rename');
 
+gulp.task('default', ['styles', 'scripts']);
+
 gulp.task('styles', ()=>{
 var sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
@@ -47,7 +49,7 @@ var sourcemaps = require('gulp-sourcemaps'),
         browsers: ["last 2 versions", "iOS >= 7"] } ) )
     .pipe( sourcemaps.write( "./", {
         includeContent: false,
-        sourceRoot: defstyles_srcdir } ) )
+        sourceRoot: "../scss" } ) )
     .pipe( gulp.dest( destdir ) )
     .pipe( gulpif(args.production, rename( { suffix: ".min" } ) ) )
     .pipe( gulpif(args.production, minifycss() ) )
@@ -66,8 +68,6 @@ var include = require('gulp-include'), // extend Javascript files with Sprockets
     .pipe( gulpif(args.production, uglify( { preserveComments: "license" } ) ) )
     .pipe( gulpif(args.production, gulp.dest( destdir ) ) )
 });
-
-gulp.task('default', ['styles', 'scripts']);
 
 gulp.task('watch', ()=>{
     gulp.watch( defstyles_srcglb, ['styles'] );
