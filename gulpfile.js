@@ -11,13 +11,14 @@
  */
 'use strict';
 var // defaults
-    defassets_dir = "assets/",
-    defvendor_srcdir = defassets_dir+"vendor/",
-    defstyles_srcdir = defassets_dir+"scss/",
+    defassets_srcdir = "assets/",
+    defvendor_srcdir = defassets_srcdir+"vendor/",
+    defstyles_srcdir = defassets_srcdir+"scss/",
     defstyles_srcglb = defstyles_srcdir+"*.scss",
-    defstyles_destdir = defassets_dir+"css/",
-    defscripts_srcglb = defassets_dir+"es6/*.js",
-    defscripts_destdir = defassets_dir+"js/",
+    defscripts_srcglb = defassets_srcdir+"es6/*.js",
+    defassets_destdir = defassets_srcdir,
+    defstyles_destdir = defassets_destdir+"css/",
+    defscripts_destdir = defassets_destdir+"js/",
     // global modules
     args = require('yargs').argv,
     gulp = require('gulp'),
@@ -26,7 +27,7 @@ var // defaults
 
 gulp.task('default', ['styles', 'scripts']);
 
-gulp.task('styles', ()=>{
+gulp.task('styles', function(){
 var sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -56,7 +57,7 @@ var sourcemaps = require('gulp-sourcemaps'),
     .pipe( gulpif(args.production, gulp.dest( destdir ) ) )
 });
 
-gulp.task('scripts', ()=>{
+gulp.task('scripts', function(){
 var include = require('gulp-include'), // extend Javascript files with Sprockets syntax
     uglify = require('gulp-uglify'),
     srcfiles = args.src || defscripts_srcglb,
@@ -69,7 +70,7 @@ var include = require('gulp-include'), // extend Javascript files with Sprockets
     .pipe( gulpif(args.production, gulp.dest( destdir ) ) )
 });
 
-gulp.task('watch', ()=>{
+gulp.task('watch', function(){
     gulp.watch( defstyles_srcglb, ['styles'] );
     gulp.watch( defscripts_srcglb, ['scripts'] );
 });
