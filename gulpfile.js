@@ -6,8 +6,8 @@
  * > npm install && bower install
  *
  * Usage (GulpJS):
- * > gulp styles  [--src=<filepath/filename.scss> [--dest=<path/dirname>]]
- * > gulp scripts [--src=<filepath/filename.js> [--dest=<path/dirname>]]
+ * > gulp styles  [--production][--src=<filepath/filename.scss> [--dest=<path/dirname>]]
+ * > gulp scripts [--production][--src=<filepath/filename.js> [--dest=<path/dirname>]]
  */
 'use strict';
 var // defaults

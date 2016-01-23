@@ -6,4 +6,4 @@
     - Custom script and style override placeholders
 1.0.0:
     - Style guide default layout
-    - Renamed assets and CMS elements for better versioning and Foundation 6 compatibility
+    - Renamed assets and CMS elements for better versioning and future Foundation 6 compatibility
