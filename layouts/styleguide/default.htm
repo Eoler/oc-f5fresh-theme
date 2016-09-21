@@ -8,11 +8,11 @@ description = "Foundation 5 style guide"
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=1">
     <meta name="robots" content="noindex,nofollow">
-    <title>{{ this.page.title }} | {{ this.theme.getConfigValue('name') }}</title>
+    <title>{{ this.page.meta_title|default(this.page.title) }} | {{ this.theme.site_name }}</title>
 
     <!-- Theming / tile colors -->
-    <meta name="theme-color" content="#2AA6CB">
-    <meta name="msapplication-TileColor" content="#2AA6CB">
+    <meta name="theme-color" content="{{ this.theme.brand_color }}">
+    <meta name="msapplication-TileColor" content="{{ this.theme.brand_color }}">
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -20,8 +20,8 @@ description = "Foundation 5 style guide"
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="{{ this.theme.getConfigValue('name') }}">
+    <meta name="apple-mobile-web-app-status-bar-style" content="{{ this.theme.brand_color }}">
+    <meta name="apple-mobile-web-app-title" content="{{ this.theme.site_name }}">
     <link rel="apple-touch-icon-precomposed" href="{{ 'assets/images/f5icon.png'|theme }}">
 
     <link rel="shortcut icon" href="{{ 'assets/images/f5icon.png'|theme }}">
@@ -40,7 +40,7 @@ description = "Foundation 5 style guide"
     </div>
     </main>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="{{ 'assets/js/foundation553.js'|theme }}"></script>
     <script src="{{ 'assets/js/styleguide.js'|theme }}"></script>
     {% scripts %}

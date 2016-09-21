@@ -3,3 +3,5 @@ description: 'Starter development template for building Zurb Foundation 5 themed
 author: Eoler
 homepage: 'http://foundation.zurb.com/sites/docs/v/5.5.3/'
 code: F5fresh
+
+form: fields.yaml

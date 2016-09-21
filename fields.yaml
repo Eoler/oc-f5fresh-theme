@@ -1,0 +1,12 @@
+fields:
+    site_name:
+        label: Site name
+        default: F5fresh
+        span: full
+
+    brand_color:
+        label: Site brand color
+        type: colorpicker
+        default: '#2AA6CB'
+        span: full
+        assetVar: 'primary-color'
