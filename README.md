@@ -1,5 +1,5 @@
 # F5fresh
-Starter development template for building [Zurb Foundation 5](http://foundation.zurb.com/sites/docs/v/5.5.3/index.html) themed [October CMS](//octobercms.com/) sites.
+Starter development template for building [Zurb Foundation 5](http://foundation.zurb.com/sites/docs/v/5.5.3/index.html) themed [OctoberCMS](//octobercms.com/) sites.
 
 Includes:
 - latest Foundation 5 [source from official Bower repository](https://github.com/zurb/bower-foundation)
@@ -38,10 +38,12 @@ Build optimized, minified, autoprefixed assets with command-line instruction ins
 gulp --production
 ```
 
-
 ## Customizing Foundation
 Global Foundation styling parameters should be modified in
-[assets/scss/_settings553 SCSS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/scss/_settings553.scss)
+[assets/scss/_settings553 SCSS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/scss/_settings553.scss).
+
 Comment out unwanted styles and scripts for leaner and faster Foundation custom build:
-[assets/scss/foundation553 SCSS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/scss/foundation553.scss)
-[assets/es6/foundation553 JS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/es6/foundation553.js)
+- [assets/scss/foundation553 SCSS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/scss/foundation553.scss)
+- [assets/es6/foundation553 JS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/es6/foundation553.js)
+
+For in-depth customizations follow Zurb's guide: [How to Make Foundation 5 Your Own](http://zurb.com/university/lessons/how-to-make-foundation-5-your-own).

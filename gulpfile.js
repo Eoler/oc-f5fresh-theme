@@ -31,7 +31,7 @@ gulp.task('styles', function(){
 var sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    minifycss = require('gulp-minify-css'),
+    cleancss = require('gulp-clean-css'),
     srcfiles = args.src || defstyles_srcglb,
     destdir = args.dest || defstyles_destdir;
     return gulp.src( srcfiles )
@@ -53,7 +53,7 @@ var sourcemaps = require('gulp-sourcemaps'),
         sourceRoot: "../scss" } ) )
     .pipe( gulp.dest( destdir ) )
     .pipe( gulpif(args.production, rename( { suffix: ".min" } ) ) )
-    .pipe( gulpif(args.production, minifycss() ) )
+    .pipe( gulpif(args.production, cleancss( /*{ compatibility: "ie8" }*/ ) ) )
     .pipe( gulpif(args.production, gulp.dest( destdir ) ) )
 });
 
