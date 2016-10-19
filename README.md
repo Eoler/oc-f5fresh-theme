@@ -46,4 +46,4 @@ Comment out unwanted styles and scripts for leaner and faster Foundation custom 
 - [assets/scss/foundation553 SCSS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/scss/foundation553.scss)
 - [assets/es6/foundation553 JS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/es6/foundation553.js)
 
-For in-depth customizations follow Zurb's guide: [How to Make Foundation 5 Your Own](http://zurb.com/university/lessons/how-to-make-foundation-5-your-own).
+For in-depth customizations follow Zurb's guide: [How to Make Foundation 5 Your Own](http://zurb.com/university/lessons/how-to-make-foundation-5-your-own) (after unlocking lessons vault).
