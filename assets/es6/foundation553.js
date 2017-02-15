@@ -18,15 +18,15 @@
 
 jQuery(document).ready(function($){
 
-  $(document).foundation({
-    tabs: {
-      deep_linking: false
-    },
-    tooltip: {
-      //append_to: '.page',
-      disable_for_touch: true,
-      touch_close_text: 'Touch to dismiss'
-    }
-  });
+    $(document).foundation({
+        tabs: {
+            deep_linking: false
+        },
+        tooltip: {
+            //append_to: '.page',
+            disable_for_touch: true,
+            touch_close_text: 'Touch to dismiss'
+        }
+    });
 
 });

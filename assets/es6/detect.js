@@ -1,2 +1,2 @@
 //= require ../vendor/foundation/js/vendor/modernizr.js
-/* /= require ../vendor/lazysizes/lazysizes.js */
+//= DISABLE ../vendor/lazysizes/lazysizes.js
