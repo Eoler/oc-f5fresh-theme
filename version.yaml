@@ -10,3 +10,5 @@
 1.0.1:
     - Added theme customization (site_name, brand_color)
     - Improved Gulp build
+1.0.2:
+    - Added intro page, enabled Yarn package manager

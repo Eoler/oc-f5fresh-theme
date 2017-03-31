@@ -1,7 +1,7 @@
 name: F5fresh
 description: 'Starter development template for building Zurb Foundation 5 themed sites.'
 author: Eoler
-homepage: 'http://foundation.zurb.com/sites/docs/v/5.5.3/'
+homepage: 'https://octobercms.com/theme/castus-f5fresh'
 code: F5fresh
 
 form: fields.yaml
