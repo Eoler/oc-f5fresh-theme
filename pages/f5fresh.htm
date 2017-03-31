@@ -1,0 +1,28 @@
+title = "Welcome to F5fresh"
+url = "/"
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ this.page.title }}</title>
+    <style>
+     .home {
+         background-color: {{ this.theme.brand_color }};
+     }
+     .splash {
+         width: 100%;
+         text-align: center;
+     }
+     h1 img {
+         vertical-align: middle;
+     }
+    </style>
+</head>
+<body class="home">
+<div class="splash">
+    <h1><img src="{{ 'assets/images/f5icon.png'|theme }}"> {{ this.page.title }}, <small>refer to:
+    <a href="{{ 'styleguide/foundation5'|page }}">Style guide</a></small></h1>
+</div>
+</body>
+</html>
