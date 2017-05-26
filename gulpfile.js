@@ -60,7 +60,7 @@ var sourcemaps = require('gulp-sourcemaps'),
 });
 
 gulp.task('scripts', function(cb){
-var include = require('gulp-include'), // extend Javascript files with Sprockets syntax
+var include = require('gulp-include'), // extend source files with Sprockets syntax
     uglify = require('gulp-uglify'),
     srcfiles = args.src || defscripts_srcglb,
     destdir = args.dest || defscripts_destdir;
@@ -68,7 +68,7 @@ var include = require('gulp-include'), // extend Javascript files with Sprockets
     include(),
     gulp.dest( destdir ),
     gulpif(args.production, rename( function(fullname){ fullname.extname = ".min.js"; } ) ),
-    gulpif(args.production, uglify( { preserveComments: "license" } ) ),
+    gulpif(args.production, uglify( { output: { comments: "/^!/" } } ) ),
     gulpif(args.production, gulp.dest( destdir ) )
   ], cb);
 });

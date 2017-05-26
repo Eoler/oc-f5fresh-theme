@@ -2,7 +2,12 @@ fields:
     site_name:
         label: Site name
         default: F5fresh
-        span: full
+        span: left
+
+    version:
+        label: Version (build)
+        default: 103
+        span: right
 
     brand_color:
         label: Site brand color

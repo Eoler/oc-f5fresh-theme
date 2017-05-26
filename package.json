@@ -3,24 +3,24 @@
     "name": "oc-f5fresh-theme",
     "version": "1.0.2",
     "description": "Starter development template for building Zurb Foundation 5 themed OctoberCMS sites.",
-    "author": "Danilo Cuculic <eoler@castus.me>",
+    "author": "Danilo Cuculić <eoler@castus.me>",
     "license": "MIT",
     "engines": {
-        "node": ">=0.12.0"
+        "node": ">=0.12.0 <7.0"
     },
     "main": "gulpfile.js",
     "devDependencies": {
         "bower": "^1.8.0",
         "gulp": "^3.9.1",
-        "gulp-autoprefixer": "^3.1.1",
-        "gulp-clean-css": "^3.0.4",
+        "gulp-autoprefixer": "^4.0.0",
+        "gulp-clean-css": "^3.4.0",
         "gulp-if": "^2.0.2",
         "gulp-include": "^2.3.1",
         "gulp-rename": "^1.2.2",
         "gulp-sass": "^3.1.0",
-        "gulp-sourcemaps": "^2.5.0",
-        "gulp-uglify": "^2.1.2",
+        "gulp-sourcemaps": "^2.6.0",
+        "gulp-uglify": "^3.0.0",
         "pump": "^1.0.2",
-        "yargs": "^7.0.2"
+        "yargs": "^8.0.1"
     }
 }

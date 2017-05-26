@@ -28,21 +28,21 @@ description = "Foundation 5 style guide"
     <link rel="canonical" href="{{ ''|page }}">
 
     <script src="{{ 'assets/js/detect.js'|theme }}"></script>
-    <link rel="stylesheet" href="{{ 'assets/css/foundation553.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/foundation553.css'|theme }}?v={{ this.theme.version }}">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
-    <link rel="stylesheet" href="{{ 'assets/css/styleguide.css'|theme }}">
+    <link rel="stylesheet" href="{{ 'assets/css/styleguide.css'|theme }}?v={{ this.theme.version }}">
     {% styles %}
 </head>
 <body>
     <main role="main" class="scroll-container">
-    <div class="row">
-    {% page %}
-    </div>
+        <div class="row">
+        {% page %}
+        </div>
     </main>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="{{ 'assets/js/foundation553.js'|theme }}"></script>
-    <script src="{{ 'assets/js/styleguide.js'|theme }}"></script>
+    <script src="{{ 'assets/js/foundation553.js'|theme }}?v={{ this.theme.version }}"></script>
+    <script src="{{ 'assets/js/styleguide.js'|theme }}?v={{ this.theme.version }}"></script>
     {% scripts %}
 </body>
 </html>
