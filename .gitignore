@@ -3,5 +3,5 @@
 *.css.map
 
 # 3rd party/vendor
-vendor/
 node_modules/
+#vendor/
