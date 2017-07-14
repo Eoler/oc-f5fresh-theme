@@ -1,17 +1,15 @@
 fields:
     site_name:
+        span: left
         label: Site name
         default: F5fresh
-        span: left
-
     version:
-        label: Version (build)
-        default: 103
         span: right
-
+        label: Version (build)
+        default: 110
     brand_color:
+        span: full
         label: Site brand color
         type: colorpicker
         default: '#2AA6CB'
-        span: full
         assetVar: 'primary-color'

@@ -54,7 +54,7 @@ var sourcemaps = require('gulp-sourcemaps'),
         sourceRoot: "../scss" } ),
     gulp.dest( destdir ),
     gulpif(args.production, rename( { suffix: ".min" } ) ),
-    gulpif(args.production, cleancss( ) ),
+    gulpif(args.production, cleancss() ),
     gulpif(args.production, gulp.dest( destdir ) )
   ], cb);
 });
@@ -71,6 +71,17 @@ var include = require('gulp-include'), // extend source files with Sprockets syn
     gulpif(args.production, uglify( { output: { comments: "/^!/" } } ) ),
     gulpif(args.production, gulp.dest( destdir ) )
   ], cb);
+});
+
+gulp.task('upbuild', ['styles', 'scripts'], function(cb){
+var fs = require('fs'),
+    yaml = require('js-yaml'),
+    srcfile = args.src || defassets_destdir+"../fields.yaml";
+  if (fs.existsSync(srcfile)) {
+    var obyaml = yaml.safeLoad( fs.readFileSync( srcfile, "utf8" ), { json: true } );
+    obyaml.fields.version.default++;
+    fs.writeFileSync( srcfile, yaml.dump( obyaml, { indent: 4 } ) );
+  }
 });
 
 gulp.task('watch', function(){

@@ -4,4 +4,4 @@
 
 # 3rd party/vendor
 node_modules/
-#vendor/
+!vendor/

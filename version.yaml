@@ -12,3 +12,5 @@
     - Improved Gulp build
 1.0.2:
     - Added intro page, enabled Yarn package manager
+1.1.0:
+    - Added Gulp task to increment build number, preloaded Bower vendor assets

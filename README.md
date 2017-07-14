@@ -17,15 +17,15 @@ php artisan theme:use f5fresh
 ```
 
 ## One-time Development Environment Setup
-Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (Stable version preferred).
+Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS version required).
 Run the following command-line instructions inside *theme root*:
 ```
 npm install --global gulp bower
-npm install && bower install
+npm install
 ```
 Alternative NPM-compatible package manager [Yarn](https://yarnpkg.com/en/) could be used:
 ```
-yarn && bower install
+yarn
 ```
 
 ## Using and Editing
@@ -37,9 +37,9 @@ Development changes can be automated with command-line instruction inside *theme
 ```
 gulp watch
 ```
-Build optimized, minified, autoprefixed assets with command-line instruction inside *theme root*:
+Build versioned, optimized, minified, autoprefixed assets with command-line instruction inside *theme root*:
 ```
-gulp --production
+gulp upbuild --production
 ```
 
 ## Customizing Foundation
