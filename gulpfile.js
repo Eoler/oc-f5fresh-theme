@@ -8,6 +8,8 @@
  * Usage (GulpJS):
  * > gulp styles  [--production][--src=<filepath/filename.scss> [--dest=<path/dirname>]]
  * > gulp scripts [--production][--src=<filepath/filename.js> [--dest=<path/dirname>]]
+ * > gulp upbuild [--production]
+ * > gulp watch
  */
 'use strict';
 var // defaults
