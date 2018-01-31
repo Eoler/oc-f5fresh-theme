@@ -2,7 +2,7 @@
  * Build project assets for development and production
  *
  * Installation (Node Package Manager):
- * > npm install --global gulp bower
+ * > npm install --global bower gulp-cli
  * > npm install && bower install
  *
  * Usage (GulpJS):
@@ -35,6 +35,7 @@ var sourcemaps = require('gulp-sourcemaps'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cleancss = require('gulp-clean-css'),
+    ignore = require('gulp-ignore'),
     srcfiles = args.src || defstyles_srcglb,
     destdir = args.dest || defstyles_destdir;
   pump([ gulp.src( srcfiles ),
@@ -55,6 +56,7 @@ var sourcemaps = require('gulp-sourcemaps'),
         includeContent: false,
         sourceRoot: "../scss" } ),
     gulp.dest( destdir ),
+    gulpif(args.production, ignore.exclude( "*.map" ) ),
     gulpif(args.production, rename( { suffix: ".min" } ) ),
     gulpif(args.production, cleancss() ),
     gulpif(args.production, gulp.dest( destdir ) )

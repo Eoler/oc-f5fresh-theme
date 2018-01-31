@@ -20,7 +20,7 @@ php artisan theme:use f5fresh
 Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS version required).
 Run the following command-line instructions inside *theme root*:
 ```
-npm install --global gulp bower
+npm install --global gulp-cli bower
 npm install
 ```
 Alternative NPM-compatible package manager [Yarn](https://yarnpkg.com/en/) could be used:
@@ -50,4 +50,4 @@ Comment out unwanted styles and scripts for leaner and faster Foundation custom 
 - [assets/scss/foundation553 SCSS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/scss/foundation553.scss)
 - [assets/es6/foundation553 JS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/es6/foundation553.js)
 
-For in-depth customizations follow Zurb's guide: [How to Make Foundation 5 Your Own](https://zurb.com/university/lessons/how-to-make-foundation-5-your-own) (after unlocking lessons vault).
+For in-depth customizations follow Zurb's guide: [How to Make Foundation 5 Your Own](https://zurb.com/university/lessons/how-to-make-foundation-5-your-own)

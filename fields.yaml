@@ -6,7 +6,7 @@ fields:
     version:
         span: right
         label: Version (build)
-        default: 110
+        default: 111
     brand_color:
         span: full
         label: Site brand color
