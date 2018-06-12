@@ -4,7 +4,8 @@ Starter development template for building [Zurb Foundation 5](https://foundation
 Includes:
 - latest Foundation 5 [source from official Bower repository](https://github.com/zurb/bower-foundation)
 - style guide layout with most Foundation UI components
-- GulpJS-based build system for development and production
+- [GulpJS-based build system](https://nystudio107.com/blog/a-gulp-workflow-for-frontend-development-automation) for development and production
+- [NPM-based config system](https://nystudio107.com/blog/a-better-package-json-for-the-frontend) for development and production
 
 
 ## Installation
@@ -21,12 +22,18 @@ Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS 
 Run the following command-line instructions inside *theme root*:
 ```
 npm install --global gulp-cli bower
-npm install
+npm i
 ```
 Alternative NPM-compatible package manager [Yarn](https://yarnpkg.com/en/) could be used:
 ```
 yarn
 ```
+Integrating build process into OctoberCMS project is easy - copy (or merge into existing) files into *project root*:
+```
+gulpfile.js
+package.json
+```
+Adjust `paths.root` configuration variable to **themes/castus-f5fresh/** and start using command-line tasks from *project root*. 
 
 ## Using and Editing
 Check [styleguide/default layout](https://github.com/Eoler/oc-f5fresh-theme/blob/master/layouts/styleguide/default.htm)
@@ -43,7 +50,7 @@ gulp upbuild --production
 ```
 
 ## Customizing Foundation
-Global Foundation styling parameters should be modified in
+Global Foundation styling parameters should be overriden in
 [assets/scss/_settings553 SCSS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/scss/_settings553.scss).
 
 Comment out unwanted styles and scripts for leaner and faster Foundation custom build:

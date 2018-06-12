@@ -1,4 +1,10 @@
 fields:
+    brand_color:
+        span: full
+        label: Site brand color
+        type: colorpicker
+        default: '#2AA6CB'
+        assetVar: 'primary-color'
     site_name:
         span: left
         label: Site name
@@ -6,10 +12,4 @@ fields:
     version:
         span: right
         label: Version (build)
-        default: 111
-    brand_color:
-        span: full
-        label: Site brand color
-        type: colorpicker
-        default: '#2AA6CB'
-        assetVar: 'primary-color'
+        default: 120

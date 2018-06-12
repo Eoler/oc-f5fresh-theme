@@ -9,8 +9,9 @@ description = "Foundation 5 style guide"
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,user-scalable=1">
     <meta name="robots" content="noindex,nofollow">
     <title>{{ this.page.meta_title|default(this.page.title) }} | {{ this.theme.site_name }}</title>
+    <link rel="canonical" href="{{ ''|page }}">
 
-    <!-- Theming / tile colors -->
+    <!-- Theming / branding -->
     <meta name="theme-color" content="{{ this.theme.brand_color }}">
     <meta name="msapplication-TileColor" content="{{ this.theme.brand_color }}">
 
@@ -25,7 +26,6 @@ description = "Foundation 5 style guide"
     <link rel="apple-touch-icon-precomposed" href="{{ 'assets/images/f5icon.png'|theme }}">
 
     <link rel="shortcut icon" href="{{ 'assets/images/f5icon.png'|theme }}">
-    <link rel="canonical" href="{{ ''|page }}">
 
     <script src="{{ 'assets/js/detect.js'|theme }}"></script>
     <link rel="stylesheet" href="{{ 'assets/css/foundation553.css'|theme }}?v={{ this.theme.version }}">
@@ -40,7 +40,7 @@ description = "Foundation 5 style guide"
         </div>
     </main>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
     <script src="{{ 'assets/js/foundation553.js'|theme }}?v={{ this.theme.version }}"></script>
     <script src="{{ 'assets/js/styleguide.js'|theme }}?v={{ this.theme.version }}"></script>
     {% scripts %}

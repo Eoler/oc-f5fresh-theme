@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="ThemeES6" pattern="file:assets/es6/*.js" />
+</component>

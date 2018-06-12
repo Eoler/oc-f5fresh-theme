@@ -16,3 +16,5 @@
     - Added Gulp task to increment build number, preloaded Bower vendor assets
 1.1.1:
     - Fixed needless sourcemaps minification in Gulp task
+1.2.0:
+    - Refactored Gulp build to use NPM package configuration (with "not dead" browserslist)

@@ -1,6 +1,14 @@
 # develop/debug
+!.idea/misc.xml
+!.idea/watcherTasks.xml
+!.idea/webResources.xml
+!.idea/scopes/
 .idea
 *.css.map
+
+# build
+yarn.lock
+package-lock.json
 
 # 3rd party/vendor
 node_modules/
