@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "oc-f5fresh-theme",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Starter development template for building Zurb Foundation 5 themed OctoberCMS sites.",
   "authors": [
     "Danilo Cuculic <eoler@castus.me>"

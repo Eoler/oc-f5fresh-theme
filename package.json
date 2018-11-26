@@ -1,17 +1,17 @@
 {
   "name": "oc-f5fresh-theme",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Starter development template for building Zurb Foundation 5 themed OctoberCMS sites.",
   "author": "Danilo Cuculić <eoler@castus.me>",
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=6.0 <9.0"
+    "node": ">=6.0 <11.0"
   },
   "main": "gulpfile.js",
   "paths": {
     "root": "./",
-    "media": "./storage/media/**/",
+    "media": "storage/media/**/",
     "assets": "assets/",
     "src": {
       "images": "images/**/",
@@ -24,7 +24,7 @@
       "scripts": "js/"
     },
     "ext": {
-      "images": "*.+(jpg|jpeg|png|gif|svg)",
+      "images": "*.{jpg,jpeg,png}",
       "styles": "*.scss",
       "scripts": "*.js"
     },
@@ -40,6 +40,10 @@
       "root": "../scss"
     }
   },
+  "images": {
+    "maxwidth": "1280",
+    "maxheight": "1280"
+  },
   "browserslist": [
     "last 2 versions",
     "not dead",
@@ -52,17 +56,17 @@
     "gulp-clean-css": "^3.10.0",
     "gulp-if": "^2.0.2",
     "gulp-ignore": "^2.0.2",
-    "gulp-imagemin": "^4.1.0",
     "gulp-include": "^2.3.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-rename": "^1.4.0",
+    "gulp-responsive": "^2.11.0",
     "gulp-sass": "^4.0.2",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "js-yaml": "^3.12.0",
     "pump": "^3.0.0",
-    "yargs": "^12.0.2"
+    "yargs": "^12.0.5"
   },
   "scripts": {
     "start": "gulp watch",

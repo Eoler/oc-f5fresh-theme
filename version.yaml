@@ -20,3 +20,5 @@
     - Refactored Gulp build to use NPM package configuration (with "not dead" browserslist)
 1.2.1:
     - Switched to unminified Modernizr 2.8.3 (from Bower)
+1.3.0:
+    - Replaced gulp-imagemin with gulp-responsive for image optimization

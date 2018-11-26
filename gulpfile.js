@@ -90,12 +90,21 @@ const
     srcFiles = args.src || pkg.paths.root + pkg.paths.assets + pkg.paths.src.images + pkg.paths.ext.images,
     destDir = args.dest || pkg.paths.root + pkg.paths.assets + pkg.paths.dest.images;
     $.pump([gulp.src(srcFiles),
-        $.imagemin([
-            $.imagemin.jpegtran({progressive: true}),
-            $.imagemin.optipng({optimizationLevel: 6}),
-            $.imagemin.gifsicle({interlaced: true}),
-            $.imagemin.svgo({plugins: [{removeViewBox: false}, {cleanupIDs: false}]}),
-        ]),
+        $.responsive({
+            '**/*.jpg':  { quality: 80, progressive: true },
+            '**/*.jpeg': { quality: 80, progressive: true },
+            '**/*.png':  { compressionLevel: 6, withoutAdaptiveFiltering: true }
+        }, {
+            width: pkg.images.maxwidth,
+            height: pkg.images.maxheight,
+            max: true,
+            withMetadata: false,
+            withoutEnlargement: true,
+            skipOnEnlargement: false,
+            errorOnEnlargement: false,
+            errorOnUnusedImage: false,
+            errorOnUnusedConfig: false
+        }),
         gulp.dest(destDir)
     ], cb);
 });
