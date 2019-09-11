@@ -7,7 +7,6 @@
 *.css.map
 
 # build
-yarn.lock
 package-lock.json
 
 # 3rd party/vendor

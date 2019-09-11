@@ -24,10 +24,6 @@ Run the following command-line instructions inside *theme root*:
 npm install --global gulp-cli bower
 npm i
 ```
-Alternative NPM-compatible package manager [Yarn](https://yarnpkg.com/en/) could be used:
-```
-yarn
-```
 Integrating build process into OctoberCMS project is easy - copy (or merge into existing) files into *project root*:
 ```
 gulpfile.js
