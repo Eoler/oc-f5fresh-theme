@@ -24,3 +24,5 @@
     - Replaced gulp-imagemin with gulp-responsive for image optimization
 1.4.0:
     - Updated NPM dependencies, switched back to NPM from Yarn
+1.5.0:
+    - Updated NPM dependencies, fixed gulp-autoprefixer warning

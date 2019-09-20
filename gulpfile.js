@@ -3,9 +3,9 @@
 /*
  * Build project assets for development and production
  *
- * Installation (Node Package Manager / Yarn):
+ * Installation (Node Package Manager):
  * > npm install --global gulp-cli bower
- * > yarn install
+ * > npm i
  *
  * Usage (GulpJS):
  * > gulp styles  [--production][--src={filepath/filename.scss} [--dest={path/dirname}]]
@@ -39,9 +39,9 @@ const
             includePaths: pkg.paths.include.sass
         }),
         $.autoprefixer({
-            cascade: false,
             //map: true,
-            browsers: pkg.browserslist
+            //browsers: pkg.browserslist,
+            cascade: false
         }),
         $.sourcemaps.write("./", {
             includeContent: false,

@@ -2002,7 +2002,6 @@ button::-moz-focus-inner {
     position: absolute;
     left: 50%;
     top: 50%;
-    -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
     max-height: 100%;
     max-width: 100%; }
@@ -3321,18 +3320,14 @@ kbd {
 
 @-webkit-keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   to {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   to {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
 /* Orbit Graceful Loading */
@@ -3385,7 +3380,6 @@ kbd {
     margin: 0;
     padding: 0;
     position: relative;
-    -webkit-transform: translateZ(0);
     transform: translateZ(0); }
     .orbit-container .orbit-slides-container img {
       display: block;
@@ -4158,7 +4152,6 @@ ul.pagination {
     top: .25rem;
     width: 1.5rem;
     transition: left 0.15s ease-out;
-    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   .switch input:checked + label {
     background: #008CBA; }
