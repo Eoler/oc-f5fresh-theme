@@ -18,7 +18,7 @@ php artisan theme:use f5fresh
 ```
 
 ## One-time Development Environment Setup
-Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS version required).
+Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS version required, Gulp v3 is incompatible with NodeJS v12+).
 Run the following command-line instructions inside *theme root*:
 ```
 npm install --global gulp-cli bower
@@ -36,11 +36,11 @@ Check [styleguide/default layout](https://github.com/Eoler/oc-f5fresh-theme/blob
 for example HTML page structure and mandatory includes.
 Custom styles example source is in [assets/scss/styleguide SCSS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/scss/styleguide.scss),
 scripts in [assets/es6/styleguide JS](https://github.com/Eoler/oc-f5fresh-theme/blob/master/assets/es6/styleguide.js).
-Development changes can be automated with command-line instruction inside *theme root*:
+Development changes can be automated with command-line instruction from configured Gulpfile (project or theme) *build root*:
 ```
 gulp watch
 ```
-Build versioned, optimized, minified, autoprefixed assets with command-line instruction inside *theme root*:
+Build versioned, optimized, minified, autoprefixed assets with command-line instruction:
 ```
 gulp upbuild --production
 ```

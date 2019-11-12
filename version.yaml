@@ -26,3 +26,5 @@
     - Updated NPM dependencies, switched back to NPM from Yarn
 1.5.0:
     - Updated NPM dependencies, fixed gulp-autoprefixer warning
+1.6.0:
+    - Updated NodeJS and NPM dependencies

@@ -1,5 +1,5 @@
-// jshint esversion: 6
-// jshint node: true
+//jshint esversion: 6
+//jshint node: true
 /*
  * Build project assets for development and production
  *
