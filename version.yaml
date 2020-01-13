@@ -28,3 +28,5 @@
     - Updated NPM dependencies, fixed gulp-autoprefixer warning
 1.6.0:
     - Updated NodeJS and NPM dependencies
+1.6.1:
+    - fixed Gulp build BrowsersList override

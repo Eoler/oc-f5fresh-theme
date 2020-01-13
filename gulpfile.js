@@ -1,11 +1,10 @@
-//jshint esversion: 6
 //jshint node: true
 /*
  * Build project assets for development and production
  *
  * Installation (Node Package Manager):
  * > npm install --global gulp-cli bower
- * > npm i
+ * > npm install && bower install
  *
  * Usage (GulpJS):
  * > gulp styles  [--production][--src={filepath/filename.scss} [--dest={path/dirname}]]
@@ -40,7 +39,7 @@ const
         }),
         $.autoprefixer({
             //map: true,
-            //browsers: pkg.browserslist,
+            overrideBrowserslist: pkg.browserslist,
             cascade: false
         }),
         $.sourcemaps.write("./", {
@@ -62,10 +61,10 @@ const
     srcFiles = args.src || pkg.paths.root + pkg.paths.assets + pkg.paths.src.scripts + pkg.paths.ext.scripts,
     destDir = args.dest || pkg.paths.root + pkg.paths.assets + pkg.paths.dest.scripts;
     $.pump([gulp.src(srcFiles),
-        $.include({hardFail: true, includePaths: [pkg.paths.root + pkg.paths.assets].concat(pkg.paths.include.js) }),
+        $.include({hardFail: true, includePaths: [pkg.paths.root + pkg.paths.assets].concat(pkg.paths.include.js)}),
         gulp.dest(destDir),
         $.size({showFiles: true, showTotal: false}),
-        $.if(args.production, $.rename(function (fullname) {
+        $.if(args.production, $.rename(function(fullname){
             fullname.extname = ".min.js";
         })),
         $.if(args.production, $.uglify({output: {comments: "/^!/"}})),

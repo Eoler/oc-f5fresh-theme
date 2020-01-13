@@ -22,7 +22,7 @@ Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS 
 Run the following command-line instructions inside *theme root*:
 ```
 npm install --global gulp-cli bower
-npm i
+npm install && bower install
 ```
 Integrating build process into OctoberCMS project is easy - copy (or merge into existing) files into *project root*:
 ```
