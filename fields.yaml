@@ -1,15 +1,18 @@
 fields:
+    site_name:
+        span: storm
+        cssClass: col-md-9
+        label: Site name
+        default: F5fresh
+    version:
+        span: storm
+        cssClass: col-md-3
+        label: Version (build)
+        default: 162
     brand_color:
-        span: full
+        span: storm
+        cssClass: col-xs-12
         label: Site brand color
         type: colorpicker
         default: '#2AA6CB'
         assetVar: 'primary-color'
-    site_name:
-        span: left
-        label: Site name
-        default: F5fresh
-    version:
-        span: right
-        label: Version (build)
-        default: 161

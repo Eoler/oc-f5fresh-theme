@@ -30,3 +30,5 @@
     - Updated NodeJS and NPM dependencies
 1.6.1:
     - fixed Gulp build BrowsersList override
+1.6.2:
+    - Updated NPM dependencies, removed IE fallbacks, rebuilt frontend assets
