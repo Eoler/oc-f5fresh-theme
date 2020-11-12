@@ -1,4 +1,5 @@
 # develop/debug
+!.idea/encodings.xml
 !.idea/misc.xml
 !.idea/watcherTasks.xml
 !.idea/webResources.xml

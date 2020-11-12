@@ -32,3 +32,5 @@
     - fixed Gulp build BrowsersList override
 1.6.2:
     - Updated NPM dependencies, removed IE fallbacks, rebuilt frontend assets
+1.7.0:
+    - Replaced CSS autoprefixing and minification with PostCSS
