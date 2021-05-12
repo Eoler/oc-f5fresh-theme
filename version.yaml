@@ -34,3 +34,5 @@
     - Updated NPM dependencies, removed IE fallbacks, rebuilt frontend assets
 1.7.0:
     - Replaced CSS autoprefixing and minification with PostCSS
+1.8.0:
+    - Updated NPM dependencies for NodeJS 14.x compatibility, added composer.json

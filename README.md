@@ -18,7 +18,7 @@ php artisan theme:use f5fresh
 ```
 
 ## One-time Development Environment Setup
-Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS version required, Gulp v3 is incompatible with NodeJS v12+).
+Install [NodeJS and Node Package Manager](https://nodejs.org/en/) globally (LTS version preferred for Gulp ^3).
 Run the following command-line instructions inside *theme root*:
 ```
 npm install --global gulp-cli bower

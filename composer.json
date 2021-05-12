@@ -1,0 +1,16 @@
+{
+    "name": "castus/f5fresh-theme",
+    "type": "october-theme",
+    "description": "Starter development template for building Zurb Foundation 5 themed OctoberCMS sites.",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Danilo Cuculić",
+            "email": "eoler@castus.me"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
