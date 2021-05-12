@@ -50,7 +50,7 @@
     "iOS >= 9"
   ],
   "dependencies": {
-    "postcss": "^8.1.7"
+    "postcss": "^8.2.10"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.2",
