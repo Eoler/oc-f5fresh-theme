@@ -38,3 +38,5 @@
     - Updated NPM dependencies for NodeJS 14.x compatibility, added composer.json
 1.8.1:
     - Updated NPM dependencies, included jQuery from CDNjs
+1.9.0:
+    - Fixed NPM dependencies for LibSass backward compatibility, fixed composer.json
