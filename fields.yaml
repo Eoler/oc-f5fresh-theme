@@ -8,7 +8,7 @@ fields:
         span: storm
         cssClass: col-md-3
         label: Version (build)
-        default: 190
+        default: 191
     brand_color:
         span: storm
         cssClass: col-xs-12

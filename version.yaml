@@ -39,4 +39,6 @@
 1.8.1:
     - Updated NPM dependencies, included jQuery from CDNjs
 1.9.0:
-    - Fixed NPM dependencies for LibSass backward compatibility, fixed composer.json
+    - Pinned NPM dependencies for LibSass backward compatibility, fixed composer.json
+1.9.1:
+    - Updated NPM dependencies for ES6 forward compatibility
