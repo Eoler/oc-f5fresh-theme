@@ -42,3 +42,5 @@
     - Pinned NPM dependencies for LibSass backward compatibility, fixed composer.json
 1.9.1:
     - Updated NPM dependencies for ES6 forward compatibility
+1.9.2:
+    - Added social links repeater field, updated NPM dependencies

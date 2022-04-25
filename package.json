@@ -1,12 +1,12 @@
 {
   "name": "oc-f5fresh-theme",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "description": "Starter development template for building Zurb Foundation 5 themed OctoberCMS sites.",
   "author": "Danilo Cuculić <eoler@castus.me>",
   "license": "MIT",
   "private": true,
   "engines": {
-    "node": ">=12.22 <=14"
+    "node": ">=12.22 <15"
   },
   "main": "gulpfile.js",
   "paths": {
@@ -50,12 +50,12 @@
     "iOS >= 10"
   ],
   "dependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.3.11",
-    "postcss-csso": "^5.0.1"
+    "autoprefixer": "^10.4.5",
+    "postcss": "^8.4.12",
+    "postcss-csso": "^6.0.0"
   },
   "devDependencies": {
-    "bower": "^1.8.12",
+    "bower": "^1.8.14",
     "gulp": "^3.9.1",
     "gulp-if": "^3.0.0",
     "gulp-ignore": "^3.0.0",
@@ -70,7 +70,7 @@
     "gulp-uglify": "^3.0.2",
     "js-yaml": "^4.1.0",
     "pump": "^3.0.0",
-    "yargs": "^17.2.1"
+    "yargs": "^17.4.1"
   },
   "scripts": {
     "start": "gulp watch",

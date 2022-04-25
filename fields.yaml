@@ -8,7 +8,7 @@ fields:
         span: storm
         cssClass: col-md-3
         label: Version (build)
-        default: 191
+        default: 192
     brand_color:
         span: storm
         cssClass: col-xs-12
@@ -16,3 +16,34 @@ fields:
         type: colorpicker
         default: '#2AA6CB'
         assetVar: 'primary-color'
+    socialinks:
+        span: storm
+        cssClass: col-xs-12
+        label: Links to social networks
+        type: repeater
+#        default:
+#            0:
+#                name: @getuikit
+#                icon: twitter
+#                link: https://twitter.com/getuikit
+#            1:
+#                name: Community
+#                icon: commenting
+#                link: https://discordapp.com/invite/NEt4Pv7
+        form:
+            fields:
+                name:
+                    span: storm
+                    cssClass: col-md-4
+                    label: Name
+                    type: text
+                icon:
+                    span: storm
+                    cssClass: col-md-2
+                    label: Icon
+                    type: text
+                link:
+                    span: storm
+                    cssClass: col-md-6
+                    label: Link URL
+                    type: text
