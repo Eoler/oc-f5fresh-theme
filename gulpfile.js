@@ -10,7 +10,6 @@
  * > gulp styles  [--production][--src={filepath/filename.scss} [--dest={path/dirname}]]
  * > gulp scripts [--production][--src={filepath/filename.js} [--dest={path/dirname}]]
  * > gulp upbuild [--production]
- * > gulp images  [--src={filepath/filename.filetypes} [--dest={path/dirname}]]
  * > gulp watch
  */
 "use strict";
@@ -75,7 +74,7 @@ const
     ], cb);
 });
 
-gulp.task('upbuild', ['images', 'styles', 'scripts'], function(cb){
+gulp.task('upbuild', ['styles', 'scripts'], function(cb){
 const
     fs = require('fs'),
     srcFile = args.src || pkg.paths.root + 'fields.yaml';
@@ -84,30 +83,6 @@ const
         obyaml.fields.version.default++;
         fs.writeFileSync(srcFile, $.jsYaml.dump(obyaml, {indent: 4}));
     }
-});
-
-gulp.task('images', function(cb){
-const
-    srcFiles = args.src || pkg.paths.root + pkg.paths.assets + pkg.paths.src.images + pkg.paths.ext.images,
-    destDir = args.dest || pkg.paths.root + pkg.paths.assets + pkg.paths.dest.images;
-    $.pump([gulp.src(srcFiles),
-        $.responsive({
-            '**/*.jpg':  { quality: 80, progressive: true },
-            '**/*.jpeg': { quality: 80, progressive: true },
-            '**/*.png':  { compressionLevel: 6, withoutAdaptiveFiltering: true }
-        }, {
-            width: pkg.images.maxwidth,
-            height: pkg.images.maxheight,
-            max: true,
-            withMetadata: false,
-            withoutEnlargement: true,
-            skipOnEnlargement: false,
-            errorOnEnlargement: false,
-            errorOnUnusedImage: false,
-            errorOnUnusedConfig: false
-        }),
-        gulp.dest(destDir)
-    ], cb);
 });
 
 gulp.task('watch', function(){
