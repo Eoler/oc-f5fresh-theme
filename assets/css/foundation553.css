@@ -3318,12 +3318,6 @@ kbd {
     [data-magellan-expedition] .sub-nav a, [data-magellan-expedition-clone] .sub-nav a {
       line-height: 1.8em; }
 
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-
 @keyframes rotate {
   from {
     transform: rotate(0deg); }
@@ -3351,13 +3345,9 @@ kbd {
       display: inline-block; }
   .slideshow-wrapper .preloader {
     border-radius: 1000px;
-    -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    -webkit-animation-name: rotate;
     animation-name: rotate;
-    -webkit-animation-timing-function: linear;
     animation-timing-function: linear;
     border-color: #555555 #FFFFFF;
     border: solid 3px;
@@ -4120,7 +4110,6 @@ ul.pagination {
   position: relative;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none; }
   .switch label {
     background: #DDDDDD;

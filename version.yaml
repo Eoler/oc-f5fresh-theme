@@ -45,4 +45,6 @@ v1.9.1:
 v1.9.2:
     - Added social links repeater field, updated NPM dependencies
 v2.0.0:
-    - Updated dependencies for OctoberCMS v2+ compatibility, removed responsive images Gulp task
+    - Updated dependencies for OctoberCMS v2.x compatibility, removed responsive images Gulp task
+v2.1.0:
+    - Updated dependencies for OctoberCMS v3.x compatibility, upgraded NPM packages

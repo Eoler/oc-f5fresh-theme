@@ -1,9 +1,12 @@
 # IDEvelop/debug
+!.gitignore
+.gitattributes
+.editorconfig
 !.idea/watcherTasks.xml
 !.idea/webResources.xml
 !.idea/scopes/
-.idea
-*.css.map
+.idea/
+#*.css.map
 
 # build
 package-lock.json

@@ -1,24 +1,24 @@
 fields:
     site_name:
-        span: storm
-        cssClass: col-md-9
+        span: row
+        rowClass: col-md-9
         label: Site name
         default: F5fresh
     version:
-        span: storm
-        cssClass: col-md-3
+        span: row
+        rowClass: col-md-3
         label: Version (build)
-        default: 200
+        default: 210
     brand_color:
-        span: storm
-        cssClass: col-xs-12
+        span: row
+        rowClass: col-xs-12
         label: Site brand color
         type: colorpicker
         default: '#2AA6CB'
         assetVar: 'primary-color'
     socialinks:
-        span: storm
-        cssClass: col-xs-12
+        span: row
+        rowClass: col-xs-12
         label: Links to social networks
         type: repeater
 #        default:
@@ -33,17 +33,17 @@ fields:
         form:
             fields:
                 name:
-                    span: storm
-                    cssClass: col-md-4
+                    span: row
+                    rowClass: col-md-4
                     label: Name
                     type: text
                 icon:
-                    span: storm
-                    cssClass: col-md-2
+                    span: row
+                    rowClass: col-md-2
                     label: Icon
                     type: text
                 link:
-                    span: storm
-                    cssClass: col-md-6
+                    span: row
+                    rowClass: col-md-6
                     label: Link URL
                     type: text

@@ -1,6 +1,6 @@
 # MIT license
 
-Copyright (c) 2016-22 Danilo Cuculić
+Copyright (c) 2016-23 Danilo Cuculić
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
