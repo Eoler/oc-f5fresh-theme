@@ -48,3 +48,5 @@ v2.0.0:
     - Updated dependencies for OctoberCMS v2.x compatibility, removed responsive images Gulp task
 v2.1.0:
     - Updated dependencies for OctoberCMS v3.x compatibility, upgraded NPM packages
+v2.2.0:
+    - Updated dependencies for OctoberCMS v3.6 compatibility, recombined OCv2 framework extras

@@ -28,7 +28,10 @@ description = "Foundation 5 style guide"
     <script src="{{ 'assets/js/detect.js'|theme }}"></script>
     <link rel="stylesheet" href="{{ 'assets/css/foundation553.css'|theme }}?v={{ this.theme.version }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
-    <link rel="stylesheet" href="{{ 'assets/css/styleguide.css'|theme }}?v={{ this.theme.version }}">
+    <link rel="stylesheet" href="{{ [
+        'assets/css/framework.extras.css',
+        'assets/css/styleguide.css',
+    ]|theme }}.css?v={{ this.theme.version }}">
 {% styles %}
 </head>
 <body>
@@ -40,7 +43,11 @@ description = "Foundation 5 style guide"
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="></script>
 <script src="{{ 'assets/js/foundation553.js'|theme }}?v={{ this.theme.version }}"></script>
-<script src="{{ 'assets/js/styleguide.js'|theme }}?v={{ this.theme.version }}"></script>
+<script src="{{ [
+    'assets/js/framework.js',
+    'assets/js/framework.extras.js',
+    'assets/js/styleguide.js',
+]|theme }}.js?v={{ this.theme.version }}"></script>
 {% scripts %}
 </body>
 </html>

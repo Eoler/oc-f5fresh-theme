@@ -1,5 +1,5 @@
 # F5fresh
-Starter development template for building [Zurb Foundation 5](https://foundation.zurb.com/sites/docs/v/5.5.3/) themed [OctoberCMS](//octobercms.com/) sites.
+Starter development template for building [Zurb Foundation 5](https://get.foundation/sites/docs-v5/) themed [OctoberCMS](//octobercms.com/) sites.
 
 Includes:
 - latest Foundation 5 [source from official Bower repository](https://github.com/zurb/bower-foundation)
@@ -29,7 +29,7 @@ Integrating build process into OctoberCMS project is easy - copy (or merge into 
 gulpfile.js
 package.json
 ```
-Adjust `paths.root` configuration variable to **themes/castus-f5fresh/** and start using command-line tasks from *project root*. 
+Adjust `paths.root` configuration variable to **themes/castus-f5fresh/** and start using command-line tasks from *project root*.
 
 ## Using and Editing
 Check [styleguide/default layout](https://github.com/Eoler/oc-f5fresh-theme/blob/master/layouts/styleguide/default.htm)

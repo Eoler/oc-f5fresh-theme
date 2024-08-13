@@ -2,15 +2,13 @@
 !.gitignore
 .gitattributes
 .editorconfig
-!.idea/watcherTasks.xml
-!.idea/webResources.xml
-!.idea/scopes/
 .idea/
 #*.css.map
 
 # build
+composer.lock
 package-lock.json
 
 # 3rd party/vendor
-node_modules/
+/node_modules
 !vendor/
